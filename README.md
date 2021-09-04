@@ -471,14 +471,3 @@ Our data is organized as follows:
         - Other (non-major) is `opother`
     1. The procedure type (`procedure_type`) is a string describing the type of cardiac surgical procedure.
     1. `sts-mgh.csv` contains 66 columns, but `sts-bwh.csv` contains 55. The BWH cohort lacks MRNs (`medrecn`), AVR status (`opavr`), and all outcomes except mortality (`mtopd`).
-
-## Docker
-To rebuild the Docker image:
-```bash
-cd docker && docker build -t aguirre-lab/sts-ml
-```
-
-To push the Docker image to `ghcr.io`:
-```bash
-docker push ghcr.io/aguirre-lab/sts-ml:latest
-```
